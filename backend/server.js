@@ -18,9 +18,8 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/complaints", complaintRoutes);
 app.use("/api/departments", departmentRoutes);
-// MongoDB connection
-mongoose
-  .connect("mongodb+srv://rajpatil2282:kTfqKolqqFezOXGl@cluster0.xqlvttn.mongodb.net/sih?retryWrites=true&w=majority&appName=Cluster0")
+// MongoDB 
+mongoose. connect()
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
